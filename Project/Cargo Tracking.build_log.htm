@@ -1,0 +1,146 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.21.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: wh199 wh199, wh199, LIC=HF801-C12TL-C1GPU-SIFV4-6NJ0X-5EAUX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+F:\Workbook\工作备份\我的工作作品\Cargo Tracking\Cargo Tracking link onenet\Project\Cargo Tracking.uvprojx
+Project File Date:  11/30/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Cargo Tracking'
+compiling mpu6050.c...
+compiling stm32f10x_it.c...
+compiling sim900a.c...
+compiling mpuiic.c...
+..\WORKBOOK\MPU6050\mpuiic.c(65): warning:  #61-D: integer operation result is out of range
+  	
+PU_SDA_IN();      //SDA????为????  
+..\WORKBOOK\MPU6050\mpuiic.c(65): warning:  #68-D: integer conversion resulted in a change of sign
+  	
+PU_SDA_IN();      //SDA????为????  
+..\WORKBOOK\MPU6050\mpuiic.c(125): warning:  #61-D: integer operation result is out of range
+  	
+PU_SDA_IN();//SDA????为????
+..\WORKBOOK\MPU6050\mpuiic.c(125): warning:  #68-D: integer conversion resulted in a change of sign
+  	
+PU_SDA_IN();//SDA????为????
+..\WORKBOOK\MPU6050\mpuiic.c: 4 warnings, 0 errors
+compiling main.c...
+..\USER\main.c(52): warning:  #223-D: function "usart3_init" declared implicitly
+  	usart3_init(115200);		//??始化串??3
+..\USER\main.c(125): warning:  #223-D: function "fabs" declared implicitly
+  				else if(P&&((fabs(P-pitch)<2) || (fabs(R-roll)<2)||(fabs(Y-yaw)<2)))
+..\USER\main.c: 2 warnings, 0 errors
+compiling inv_mpu_dmp_motion_driver.c...
+compiling inv_mpu.c...
+compiling led.c...
+compiling sys.c...
+compiling usart.c...
+compiling delay.c...
+compiling key.c...
+compiling timer2.c...
+compiling gps.c...
+compiling timer3.c...
+compiling usart3.c...
+compiling stm32f10x_exti.c...
+compiling usart2.c...
+..\WORKBOOK\USART2\usart2.c(106): warning:  #223-D: function "TIM6_Int_Init" declared implicitly
+  	TIM6_Int_Init(99,7199);		//10ms?卸?
+..\WORKBOOK\USART2\usart2.c: 1 warning, 0 errors
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_usart.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=33744 RO-data=4388 RW-data=136 ZI-data=4984  
+".\Cargo Tracking.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.1.0.pack
+                Keil::Device:Startup:1.0.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: GPIO Version: 3.5.0
+   * Component: RCC Version: 3.5.0
+   * Component: Framework Version: 3.5.1
+   * Component: EXTI Version: 3.5.0
+   * Component: TIM Version: 3.5.0
+   * Component: USART Version: 3.5.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\Workbook\工作备份\我的工作作品\Cargo Tracking\Cargo Tracking link onenet\Project\RTE
+  F:\Workbook\工作备份\我的工作作品\Cargo Tracking\Cargo Tracking link onenet\Project\RTE\Device\STM32F103ZE
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  E:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+  E:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_hd.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+Build Time Elapsed:  00:00:10
+</pre>
+</body>
+</html>
