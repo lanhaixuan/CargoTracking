@@ -1,0 +1,9 @@
+POST /devices/4059176/datapoints HTTP/1.1
+api-key: jebuoO6YrgCmy2TwMfRTTNWw
+Host: api.heclouds.com
+Content-Length: 82
+
+{"datastreams":[{"id":"location","datapoints":[{"value":{"lon":125,"lat":30}}]}]}
+
+
+
