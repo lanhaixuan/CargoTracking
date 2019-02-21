@@ -106,8 +106,8 @@ void sim900a_tcpudp_test()
 	
 	char sensor_id_temp[]="0001";
 	char OneNetServer[]="api.heclouds.com";
-	char device_id_temp[]="4059176";//设备ID
-	char API_VALUE_temp[]="jebuoO6YrgCmy2TwMfRTTNWwCMI=";//APIKEY
+	char device_id_temp[]="your device id";//设备ID
+	char API_VALUE_temp[]="your apikey";//APIKEY
 	
 	char send_buf[400]= {0};
 	char text[100] = {0};
